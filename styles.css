@@ -283,14 +283,14 @@
   
   .projects__grid {
     max-width: 900px;
-    margin: -4 auto;
+    margin: -8 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
     grid-gap: 8em;
   }
   
   .project {
-    padding: 2em;
+    padding: 4em;
     margin: 0 auto;
     text-align: center;
     box-shadow: var(--shadow);
