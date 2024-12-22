@@ -286,11 +286,11 @@
     margin: -8 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-    grid-gap: 8em;
+    grid-gap: 16em;
   }
   
   .project {
-    padding: 4em;
+    padding: 1em;
     margin: 0 auto;
     text-align: center;
     box-shadow: var(--shadow);
