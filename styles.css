@@ -282,11 +282,11 @@
   }
   
   .projects__grid {
-    max-width: 1000px;
+    max-width: 900px;
     margin: -4 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-    grid-gap: 4em;
+    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    grid-gap: 8em;
   }
   
   .project {
