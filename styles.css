@@ -285,8 +285,8 @@
     max-width: 900px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(center, minmax(11em, 1fr));
-    grid-gap: 16em;
+    grid-template-columns: repeat(center, minmax(11em, 0fr));
+    grid-gap: 14em;
   }
   
   .project {
