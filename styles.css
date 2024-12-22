@@ -286,7 +286,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(center, minmax(11em, 0fr));
-    grid-gap: 14em;
+    grid-gap: 10em;
   }
   
   .project {
