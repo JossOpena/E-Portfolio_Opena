@@ -283,7 +283,7 @@
   
   .projects__grid {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 1 auto;
     display: grid;
     grid-template-columns: repeat(center, minmax(12em, 1fr));
     grid-gap: 16em;
