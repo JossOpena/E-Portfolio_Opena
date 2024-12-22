@@ -17,24 +17,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Joss Opena ePortfolio</title>
     <style>
-      /* Inline design enhancements */
-      body {
-        margin: 0;
-        font-family: "Poppins", sans-serif;
-        background-color: #f9f9f9;
-      }
-
-      .header {
-        background-color: #3f51b5;
-        color: white;
-        padding: 1rem;
-      }
-
-      .about {
-        padding: 2rem;
-        text-align: center;
-      }
-
+      /* Additional styles for simple designs */
       .about__image {
         border-radius: 50%;
         width: 150px;
@@ -42,37 +25,25 @@
         object-fit: cover;
         margin-bottom: 1rem;
         border: 4px solid #3f51b5;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
       }
 
-      .section {
-        padding: 2rem;
-      }
-
-      .section__title {
-        color: #3f51b5;
-        margin-bottom: 1rem;
-        text-align: center;
+      .about__desc {
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+        color: #444;
       }
 
       .project__image {
         max-width: 100%;
         border-radius: 8px;
         border: 1px solid #ccc;
+        transition: transform 0.3s;
       }
 
-      .skills__list {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        list-style: none;
-        padding: 0;
-      }
-
-      .skills__list-item {
-        padding: 0.5rem 1rem;
-        background-color: #3f51b5;
-        color: white;
-        border-radius: 5px;
+      .project__image:hover {
+        transform: scale(1.05);
       }
 
       .btn--outline {
@@ -88,32 +59,40 @@
         background-color: #3f51b5;
         color: white;
       }
+
+      .skills__list {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+      }
+
+      .skills__list-item {
+        padding: 0.5rem 1rem;
+        background-color: #3f51b5;
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;
+      }
     </style>
   </head>
   <body class="light" id="top">
     <header class="header center">
       <h3>
-        <a href="https://github.com/JossOpena" class="link" style="color: white"
-          >Joss.</a
-        >
+        <a href="https://github.com/JossOpena" class="link">Joss.</a>
       </h3>
 
       <nav class="nav center">
         <ul class="nav__list center">
           <li class="nav__list-item">
-            <a class="link link--nav" href="#projects" style="color: white"
-              >Projects</a
-            >
+            <a class="link link--nav" href="#projects">Projects</a>
           </li>
           <li class="nav__list-item">
-            <a class="link link--nav" href="#skills" style="color: white"
-              >Skills</a
-            >
+            <a class="link link--nav" href="#skills">Skills</a>
           </li>
           <li class="nav__list-item">
-            <a class="link link--nav" href="#contact" style="color: white"
-              >Contact</a
-            >
+            <a class="link link--nav" href="#contact">Contact</a>
           </li>
         </ul>
 
@@ -134,7 +113,7 @@
     <main>
       <!-- About -->
       <div class="about center">
-        <!-- Add an introductory image -->
+        <!-- Profile Image Added -->
         <img
           src="assets/profile.png"
           alt="Joss Opena"
@@ -178,9 +157,86 @@
             <p class="project__description">
               Echo trace is designed to check and identify the connectivity
               between a client and a target server or device over a network.
+              It uses Internet Control Message Protocol (ICMP) to send echo
+              requests and receive replies. This allows users to assess network
+              performance, latency, and packet loss.
             </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
           </div>
-          <!-- Repeat for other projects -->
+
+          <div class="project">
+            <img src="assets/Quickfusion.png" alt="QuickFusion" class="project__image" />
+            <h3>QuickFusion</h3>
+            <p class="project__description">
+              This paper introduces a hybrid algorithm that switches to insertion 
+              sort when sub array sizes fall below a predefined threshold, achieving
+              a significant overhead reduction and thus increases the sorting speed.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">C++</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <img src="assets/Tower.png" alt="Tower Defense" class="project__image" />
+            <h3>Tower Defense</h3>
+            <p class="project__description">
+              A 2D tactical tower defense game offering immersive and 
+              rewarding gameplay. An ongoing project with my classmates,
+              utilizing unity and c scripts.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Unity</li>
+              <li class="project__stack-item">C#</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -188,10 +244,11 @@
       <section class="section skills" id="skills">
         <h2 class="section__title">Skills</h2>
         <ul class="skills__list">
-          <li class="skills__list-item">C++</li>
-          <li class="skills__list-item">C#</li>
-          <li class="skills__list-item">Python</li>
-          <li class="skills__list-item">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">C++</li>
+          <li class="skills__list-item btn btn--plain">C#</li>
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">Unity</li>
         </ul>
       </section>
 
@@ -205,8 +262,18 @@
     </main>
 
     <footer class="footer">
-      <a>Thanks for stopping by, Feel free to message me!</a>
+      <a>
+        Thanks for stopping by, Feel free to message me!
+      </a>
     </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
 
     <script src="./script.js"></script>
   </body>
