@@ -283,9 +283,9 @@
   
   .projects__grid {
     max-width: 900px;
-    margin: -8 auto;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(center, minmax(18em, 1fr));
+    grid-template-columns: repeat(center, minmax(12em, 1fr));
     grid-gap: 16em;
   }
   
