@@ -285,7 +285,7 @@
     max-width: 900px;
     margin: -8 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    grid-template-columns: repeat(center, minmax(18em, 1fr));
     grid-gap: 16em;
   }
   
