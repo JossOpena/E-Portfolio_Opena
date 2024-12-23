@@ -345,7 +345,7 @@
     justify-items: center; /* Center-aligns items */
   }
   
-  .certification {
+  .certifications {
     background: rgba(255, 255, 255, 0.2); /* Increased opacity for visibility */
     padding: 1.5rem; /* Slightly more padding */
     border-radius: 12px; /* Increased border radius */
@@ -356,26 +356,26 @@
     max-width: 300px; /* Added max width to avoid oversized cards */
   }
   
-  .certification:hover {
+  .certifications:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced hover shadow */
   }
   
-  .certification img {
+  .certifications img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 1rem;
   }
   
-  .certification h3 {
+  .certifications h3 {
     font-size: 1.2rem; /* Slightly larger title font */
     font-weight: bold;
     color: var(--clr-primary); /* Matches theme */
     margin-bottom: 0.75rem;
   }
   
-  .certification a {
+  .certifications a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -386,7 +386,7 @@
     transition: background-color 0.3s, color 0.3s;
   }
   
-  .certification a:hover {
+  .certifications a:hover {
     background-color: #fff;
     color: #3f51b5;
   }
@@ -397,12 +397,11 @@
       grid-template-columns: 1fr; /* Stacks certifications vertically */
       gap: 1rem;
     }
-    .certification {
+    .certifications {
       max-width: 90%; /* Ensures responsive padding */
       margin: 0 auto;
     }
   }
-  
   
   .contact {
     flex-direction: column;
