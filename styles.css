@@ -338,70 +338,71 @@
   
   .certifications {
     display: grid;
-    gap: 8rem; /* Increased gap for better spacing */
-    grid-template-columns: repeat(auto-fit, minmax(900px, 2fr)); /* Responsive grid */
+    gap: 2rem; /* Proper spacing between items */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive and adaptive */
     margin-top: 2rem;
-    padding: 1rem; /* Added padding for better alignment */
-    justify-items: center; /* Center-aligns items */
+    padding: 1rem;
+    justify-items: center; /* Center-aligns the content */
   }
   
-  .certifications {
-    background: rgba(255, 255, 255, 0.2); /* Increased opacity for visibility */
-    padding: 1.5rem; /* Slightly more padding */
-    border-radius: 12px; /* Increased border radius */
+  .certification {
+    background: rgba(255, 255, 255, 0.3); /* Slightly more opaque for better visibility */
+    padding: 2rem; /* Enhanced padding for more balance */
+    border-radius: 12px; /* Keeps the rounded look */
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow for better contrast */
     transition: transform 0.3s, box-shadow 0.3s;
-    width: 100%; /* Consistent width */
-    max-width: 300px; /* Added max width to avoid oversized cards */
+    width: 100%;
+    max-width: 320px; /* Increased max width for larger certificates */
   }
   
-  .certifications:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced hover shadow */
+  .certification:hover {
+    transform: scale(1.07); /* Slightly stronger hover effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced hover shadow */
   }
   
-  .certifications img {
+  .certification img {
     max-width: 100%;
     height: auto;
-    border-radius: 16px;
+    border-radius: 8px; /* Consistent with the card design */
+    margin-bottom: 1.5rem; /* More space between the image and the title */
+  }
+  
+  .certification h3 {
+    font-size: 1.3rem; /* Slightly larger for better readability */
+    font-weight: bold;
+    color: var(--clr-primary, #3f51b5); /* Added fallback color */
     margin-bottom: 1rem;
   }
   
-  .certifications h3 {
-    font-size: 1.2rem; /* Slightly larger title font */
-    font-weight: bold;
-    color: var(--clr-primary); /* Matches theme */
-    margin-bottom: 0.75rem;
-  }
-  
-  .certifications a {
+  .certification a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     border: 2px solid #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    background: rgba(0, 0, 0, 0.2); /* Added background for better button visibility */
+    padding: 0.6rem 1.2rem; /* Slightly larger button for better interaction */
+    border-radius: 8px; /* Rounded button */
+    background: rgba(0, 0, 0, 0.4); /* Increased background opacity */
     transition: background-color 0.3s, color 0.3s;
   }
   
-  .certifications a:hover {
+  .certification a:hover {
     background-color: #fff;
-    color: #3f51b5;
+    color: var(--clr-primary, #3f51b5); /* Hover effect with consistent theme */
   }
   
   /* Media query for responsive behavior */
   @media (max-width: 768px) {
     .certifications {
-      grid-template-columns: 2fr; /* Stacks certifications vertically */
-      gap: 2em;
+      grid-template-columns: 1fr; /* Stacks certifications vertically */
+      gap: 1.5rem;
     }
-    .certifications {
-      max-width: 90%; /* Ensures responsive padding */
+    .certification {
+      max-width: 95%; /* Ensures consistent responsiveness */
       margin: 0 auto;
     }
   }
+  
   
   .contact {
     flex-direction: column;
