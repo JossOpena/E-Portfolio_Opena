@@ -394,8 +394,8 @@
   /* Media query for responsive behavior */
   @media (max-width: 768px) {
     .certifications {
-      grid-template-columns: 1fr; /* Stacks certifications vertically */
-      gap: 1rem;
+      grid-template-columns: 2fr; /* Stacks certifications vertically */
+      gap: 2em;
     }
     .certifications {
       max-width: 90%; /* Ensures responsive padding */
