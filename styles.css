@@ -339,10 +339,10 @@
   .certifications {
     display: grid;
     gap: 8rem; /* Proper spacing between items */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive and adaptive */
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Responsive and adaptive */
     margin-top: 2rem;
     padding: 1rem;
-    justify-items: left; /* Center-aligns the content */
+    justify-items: center; /* Center-aligns the content */
   }
   
   .certification {
