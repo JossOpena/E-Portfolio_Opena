@@ -338,8 +338,8 @@
   
   .certifications {
     display: grid;
-    gap: 4rem; /* Increased gap for better spacing */
-    grid-template-columns: repeat(auto-fit, minmax(900px, 1fr)); /* Responsive grid */
+    gap: 8rem; /* Increased gap for better spacing */
+    grid-template-columns: repeat(auto-fit, minmax(900px, 2fr)); /* Responsive grid */
     margin-top: 2rem;
     padding: 1rem; /* Added padding for better alignment */
     justify-items: center; /* Center-aligns items */
