@@ -382,7 +382,7 @@
   
   @media (max-width: 768px) {
     .certifications {
-      grid-template-columns: 1fr; /* Stack items for smaller screens */
+      grid-template-columns: 2fr; /* Stack items for smaller screens */
     }
   }
   
