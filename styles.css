@@ -370,7 +370,7 @@
         padding: 2rem;
         border-radius: 12px;
         text-align: center;
-        box-shadow: 0 4px 10px rgba(3, 3, 3, 0.2);
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
         transition: transform 0.3s, box-shadow 0.3s;
         width: 100%;
         max-width: 950px; /* Adjust this value to change the maximum width of certificates */
