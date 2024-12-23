@@ -80,31 +80,40 @@
       }
 
       .certification {
-        background: rgba(255, 255, 255, 0.1);
-        padding: 1rem;
-        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 1.5rem;
+        border-radius: 15px;
         text-align: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s, box-shadow 0.3s;
       }
 
       .certification:hover {
         transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
       }
 
       .certification img {
         max-width: 100%;
-        border-radius: 5px;
+        border-radius: 10px;
         margin-bottom: 1rem;
       }
 
+      .certification h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 0.5rem;
+      }
+
       .certification a {
+        display: inline-block;
         text-decoration: none;
         color: #fff;
         font-weight: bold;
         border: 2px solid #fff;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
+        padding: 0.5rem 1.2rem;
+        border-radius: 8px;
         transition: background-color 0.3s, color 0.3s;
       }
 
@@ -118,7 +127,7 @@
     <!-- Background Image -->
     <img
       src="assets/4k-minimalist-blue.jpg"
-      alt="Background image of a minimalist blue design"
+      alt="Background"
       class="background-image"
     />
     <header class="header center">
@@ -158,7 +167,7 @@
       <div class="about center">
         <img
           src="assets/profile.jpg"
-          alt="Profile picture of Joss Opena"
+          alt="Joss Opena"
           class="about__image"
         />
         <h1>Hi, I am <span class="about__name">Joss Opena</span></h1>
@@ -195,7 +204,7 @@
 
         <div class="projects__grid">
           <div class="project">
-            <img src="assets/Echo.png" alt="Screenshot of EchoTrace project" class="project__image" />
+            <img src="assets/Echo.png" alt="EchoTrace" class="project__image" />
             <h3>EchoTrace</h3>
             <p class="project__description">
               Echo trace is designed to check and identify the connectivity
@@ -209,7 +218,7 @@
           </div>
 
           <div class="project">
-            <img src="assets/Quickfusion.png" alt="Screenshot of QuickFusion project" class="project__image" />
+            <img src="assets/Quickfusion.png" alt="QuickFusion" class="project__image" />
             <h3>QuickFusion</h3>
             <p class="project__description">
               This paper introduces a hybrid algorithm that switches to insertion 
@@ -222,7 +231,7 @@
           </div>
 
           <div class="project">
-            <img src="assets/Tower.png" alt="Screenshot of Tower Defense game project" class="project__image" />
+            <img src="assets/Tower.png" alt="Tower Defense" class="project__image" />
             <h3>Tower Defense</h3>
             <p class="project__description">
               A 2D tactical tower defense game offering immersive and 
@@ -254,52 +263,52 @@
         <h2 class="section__title">Certifications</h2>
         <div class="certifications">
           <!-- Certificate 1 -->
-          <article class="certification">
+          <div class="certification">
             <img
               src="assets/cisco.png"
-              alt="Cisco Networking Certificate Image"
+              alt="Cisco Networking"
             />
             <h3>Cisco Networking</h3>
             <a href="https://www.credly.com/badges/fd6bc742-54d9-4870-8a44-baa69ddaf009/public_url" target="_blank"
               >View Certificate</a
             >
-          </article>
+          </div>
 
           <!-- Certificate 2 -->
-          <article class="certification">
+          <div class="certification">
             <img
               src="assets/so2.png"
-              alt="Safety Officer 2 Certificate Image"
+              alt="Safety Officer 2"
             />
             <h3>Safety Officer 2</h3>
             <a href="https://drive.google.com/file/d/1OwdpDN73gLYWwTbBnnPveesdQ13sP0b0/view" target="_blank"
               >View Certificate</a
             >
-          </article>
+          </div>
 
           <!-- Certificate 3 -->
-          <article class="certification">
+          <div class="certification">
             <img
               src="assets/wordpress.png"
-              alt="Wordpress and Marketing Certificate Image"
+              alt="Wordpress & Marketing"
             />
             <h3>Wordpress & Marketing</h3>
             <a href="https://kurso.ph/certificates/wordpress-and-marketing/?course_id=487&cert-nonce=36f6ca331d" target="_blank"
               >View Certificate</a
             >
-          </article>
+          </div>
 
           <!-- Certificate 4 -->
-          <article class="certification">
+          <div class="certification">
             <img
               src="assets/social.png"
-              alt="Social Media Management Certificate Image"
+              alt="Social Media Management"
             />
             <h3>Social Media Management</h3>
             <a href="https://kurso.ph/certificates/social-media-management/?course_id=3606&cert-nonce=9f8c95325c" target="_blank"
               >View Certificate</a
             >
-          </article>
+          </div>
         </div>
       </section>
 
