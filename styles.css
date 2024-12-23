@@ -338,55 +338,72 @@
   
   .certifications {
     display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for a 2x2 grid */
+    gap: 2rem; /* Increased gap for better spacing */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
     margin-top: 2rem;
-    justify-content: center; /* Center grid items horizontally */
+    padding: 1rem; /* Added padding for better alignment */
+    justify-items: center; /* Center-aligns items */
   }
   
-  .certifications {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 10px;
+  .certification {
+    background: rgba(255, 255, 255, 0.2); /* Increased opacity for visibility */
+    padding: 1.5rem; /* Slightly more padding */
+    border-radius: 12px; /* Increased border radius */
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%; /* Consistent width */
+    max-width: 300px; /* Added max width to avoid oversized cards */
   }
   
-  .certifications:hover {
+  .certification:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced hover shadow */
   }
   
-  .certifications img {
+  .certification img {
     max-width: 100%;
-    border-radius: 0px;
+    height: auto;
+    border-radius: 8px;
     margin-bottom: 1rem;
-    width: 150px; /* Adjust the size as needed */
-    height: auto; /* Maintain aspect ratio */
   }
   
-  .certifications a {
+  .certification h3 {
+    font-size: 1.2rem; /* Slightly larger title font */
+    font-weight: bold;
+    color: var(--clr-primary); /* Matches theme */
+    margin-bottom: 0.75rem;
+  }
+  
+  .certification a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     border: 2px solid #fff;
     padding: 0.5rem 1rem;
     border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2); /* Added background for better button visibility */
     transition: background-color 0.3s, color 0.3s;
   }
   
-  .certifications a:hover {
+  .certification a:hover {
     background-color: #fff;
     color: #3f51b5;
   }
   
+  /* Media query for responsive behavior */
   @media (max-width: 768px) {
     .certifications {
-      grid-template-columns: 2fr; /* Stack items for smaller screens */
+      grid-template-columns: 1fr; /* Stacks certifications vertically */
+      gap: 1rem;
+    }
+    .certification {
+      max-width: 90%; /* Ensures responsive padding */
+      margin: 0 auto;
     }
   }
   
-
+  
   .contact {
     flex-direction: column;
   }
