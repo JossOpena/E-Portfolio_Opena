@@ -70,6 +70,48 @@
         border-radius: 5px;
         font-weight: bold;
       }
+
+      /* Certification styles */
+      .certifications {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        margin-top: 2rem;
+      }
+
+      .certification {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1rem;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .certification:hover {
+        transform: scale(1.05);
+      }
+
+      .certification img {
+        max-width: 100%;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+      }
+
+      .certification a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        border: 2px solid #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .certification a:hover {
+        background-color: #fff;
+        color: #3f51b5;
+      }
     </style>
   </head>
   <body class="light" id="top">
@@ -205,6 +247,60 @@
           <li class="skills__list-item btn btn--plain">JavaScript</li>
           <li class="skills__list-item btn btn--plain">Unity</li>
         </ul>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications" class="section certifications">
+        <h2 class="section__title">Certifications</h2>
+        <div class="certifications">
+          <!-- Certificate 1 -->
+          <div class="certification">
+            <img
+              src="assets/cisco.png"
+              alt="Cisco Networking"
+            />
+            <h3>Certificate Title 1</h3>
+            <a href="https://link-to-certificate1.com" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+
+          <!-- Certificate 2 -->
+          <div class="certification">
+            <img
+              src="assets/so2.png"
+              alt="Safety Officer 2"
+            />
+            <h3>Certificate Title 2</h3>
+            <a href="https://link-to-certificate2.com" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+
+          <!-- Certificate 3 -->
+          <div class="certification">
+            <img
+              src="assets/wordpress.png"
+              alt="Wordpress & Marketing"
+            />
+            <h3>Certificate Title 3</h3>
+            <a href="https://link-to-certificate3.com" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+
+          <!-- Certificate 4 -->
+          <div class="certification">
+            <img
+              src="assets/social.png"
+              alt="Social Media Management"
+            />
+            <h3>Certificate Title 4</h3>
+            <a href="https://link-to-certificate4.com" target="_blank"
+              >View Certificate</a
+            >
+          </div>
+        </div>
       </section>
 
       <!-- Contact -->
